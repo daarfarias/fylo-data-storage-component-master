@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 375px;
+  font-family: Raleway, sans-serif;
+  background: url("./images/bg-mobile.png");
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  width: 325px;
+  margin: auto;
+}
+
+.box-one {
+  height: 200px;
+  background: hsl(228, 56%, 26%);
+  border-radius: 0.6rem 6rem 0.6rem 0.6rem;
+  margin: 150px auto 15px;
+}
+
+.storage-header {
+  padding: 40px 40px 30px;
+}
+
+.storage-icon {
+  display: flex;
+  margin-left: 40px;
+  gap: 15px;
+}
+
+.icon {
+  width: 16%;
+}
+
+#document {
+  padding: 0.8rem 0.85rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 0.4rem;
+}
+
+#folder {
+  padding: 0.85rem 0.7rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 0.4rem;
+}
+
+#upload {
+  padding: 1rem 0.7rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 0.4rem;
+}
+
+.box-two {
+  height: 160px;
+  background: hsl(228, 56%, 26%);
+  position: relative;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.storage-info {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+.storage-info p {
+  font-size: 0.85rem;
+  color: hsla(0, 0%, 99%, 0.6);
+}
+
+.storage-info span {
+  color: hsl(243, 100%, 93%);
+  font-weight: 700;
+}
+
+.storage-gb {
+  display: flex;
+  gap: 180px;
+  margin-top: 10px;
+}
+
+.storage-gb p {
+  font-weight: 700;
+  color: hsla(0, 0%, 99%, 0.7);
+  font-size: 0.75rem;
+}
+
+.storage-bar {
+  width: 80%;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  background-color: hsla(229, 57%, 11%, 0.6);
+}
+
+.storage-content {
+  width: 75%;
+  height: 0.8rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  position: relative;
+  border-radius: 0.6rem;
+  top: 3px;
+  left: 2px;
+}
+
+.storage-point {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: white;
+  border-radius: 50%;
+  left: 95%;
+  bottom: 12%;
+  position: absolute;
+}
+
+.storage-left {
+  width: 180px;
+  height: 70px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.6rem;
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  left: 22%;
+  bottom: -20%;
+  font-size: 1.25rem;
+}
+.storage-left p {
+  color: hsl(229, 7%, 55%);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    width: 1440px;
+    height: 800px;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("./images/bg-desktop.png");
+    background-attachment: fixed;
+    background-position: bottom;
+  }
+
+  .wrapper {
+    width: 925px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    margin: 300px auto;
+  }
+
+  .box-one {
+    width: 350px;
+    margin: 0;
+  }
+
+  .box-two {
+    width: 540px;
+  }
+
+  .storage-info {
+    margin-left: -210px;
+  }
+
+  .storage-gb {
+    gap: 350px;
+  }
+
+  .storage-left {
+    border-bottom-right-radius: 0;
+    top: -30%;
+    left: 59%;
+  }
+
+  .storage-gb::after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    border-left: 20px solid transparent;
+    border-top: 25px solid white;
+    top: 14%;
+    left: 88.7%;
+  }
+
+  .storage-bar {
+    width: 84%;
+  }
+
+  .storage-point {
+    left: 96.5%;
+  }
+
+  .attribution {
+    margin-top: -10%;
+  }
+}
